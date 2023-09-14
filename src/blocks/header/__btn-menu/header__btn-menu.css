@@ -1,0 +1,27 @@
+.header__btn-menu{
+    color: #fff;
+    background-color: green;
+    padding: 7px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    transition: left .23s;
+    z-index: 3;
+    width: 25px;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.header__btn-menu span {
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.header__btn-menu span.first {
+  margin-top: 0;
+}
+

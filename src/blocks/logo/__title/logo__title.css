@@ -1,0 +1,15 @@
+.logo__title{
+  margin: 0;
+  font-size: 30px;
+}
+@media screen and (max-width: 1065px){
+  .logo__title{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .logo__title{
+    font-size: 20px;
+  }
+}

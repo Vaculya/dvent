@@ -1,0 +1,9 @@
+.btn_disabled{
+  opacity: 0.7;
+  color: #000;
+  border: 1px solid #000000;
+  background-color: gray;
+  color: red;
+  pointer-events: none;
+  cursor: default;
+}

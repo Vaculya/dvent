@@ -1,0 +1,14 @@
+.logo__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 400px){
+  .logo__text{
+    padding: 5px 0 0 0;
+  }
+}

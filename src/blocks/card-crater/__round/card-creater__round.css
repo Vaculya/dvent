@@ -1,0 +1,10 @@
+.card-creater__round{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

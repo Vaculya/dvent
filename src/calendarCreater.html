@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./air-datepicker/air-datepicker.css">
+  <link rel="stylesheet" href="./pages/calendarCreater.css">
+  <title>Адвент-календарь</title>
+</head>
+<body class="page">
+  <div class="page__wrapper">
+      <header class="header">
+        <div class="logo logo_position_header">
+          <img class="logo__img" src="./images/header/headerLogo.svg" alt="Логотип">
+          <div class="logo__text">
+            <h1 class="logo__title">RELAXING TRIP</h1>
+            <p class="logo__subtitle">Путешествуй легко!</p>
+          </div>
+        </div>
+        <input type="checkbox" id="header__menu-btn-input" class="header__menu-hidden-ticker">
+        <label class="header__btn-menu header__btn-menu_hidden" for="header__menu-btn-input">
+          <span class="first"></span>
+          <span class="second"></span>
+          <span class="third"></span>
+        </label>
+        <menu class="header__menu header__menu_hidden">
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a  class="header__menu-link" href="#">Начать</a>
+            </li>
+            <li class="header__menu-item">
+              <a  class="header__menu-link" href="#">Для чего?</a>
+            </li>
+            <li class="header__menu-item">
+              <a  class="header__menu-link" href="#">Ваше путешествие</a>
+            </li>
+            <li class="header__menu-item">
+              <a  class="header__menu-link" href="#">Мой кабинет</a>
+            </li>
+          </ul>
+        </menu>
+      </header>
+      <main class="main">
+        <form class="formOfDate form">
+          <input type="text" id="airdatepicker" name="date" class="from__input formOfDate__input datepicker-here" readonly>
+          <span class="from__input-error airdatepicker-error"></span>
+          <button class="btnShow btn">Выбрать даты</button>
+        </form>
+        <section class="calendar">
+          <h2 class="calendar__title">Отдыхай с интересом!</h2>
+          <div class="calendar__wrapper">
+
+          </div>
+        </section>
+      </main>
+    <footer class="footer">
+      <p class="footer__created">
+        Данный сайт разработан Матвеевым Владиславом Владимировичем, студентом группы 3901
+      </p>
+    </footer>
+    <div class="popup">
+      <div class="card-crater">
+        <h2 class="card-creater__day"></h2>
+        <div class="card-creater__wrapper">
+          <div class="card-creater__choose">
+              <div class="card-creater__round card-creater__textAdd">
+                <img src="./images/card-creater/text.svg" alt="Текст">
+              </div>
+              <div class="card-creater__round card-creater__imgAdd">
+                <img src="./images/card-creater/image.svg" alt="фото">
+              </div>
+            <button class="card-creater__round card-creater__save">
+              <img src="./images/card-creater/save.svg" alt="Сохранить">
+            </button>
+          </div>
+          <form class="card-crater__form-text card-crater__form card-crater__form_opened" method="post">
+            <textarea class="card-creater__text" name="text-about" cols="30" rows="10" placeholder="Введите ваш текст">
+            </textarea>
+          </form>
+          <form class="card-crater__form-img card-crater__form card-crater__form_opened" method="post">
+            <inpu class="card-creater__img" type="file" accept=".jpeg,.jpg,.gif,.png,.svg,.webp">
+          </form>
+        </div>
+        <div class="my-day">
+          <p class="my-day__text"></p>
+          <div class="my-day__images">
+
+          </div>
+        </div>
+      </div>
+      <div class="card-crater__content day-content">
+        <p class="day-content__text"></p>
+        <div class="day-content-photos">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <template id="card-template">
+    <div class="card">
+      <p class="card__day"></p>
+    </div>
+  </template>
+  <script  src="./air-datepicker/air-datepicker.js"></script>
+  <script type="module" src="./pages/calendarCreater.js"></script>
+  </body>
+</html>

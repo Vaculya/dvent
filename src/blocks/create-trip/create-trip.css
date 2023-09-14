@@ -1,0 +1,10 @@
+.create-trip{
+  width: 150px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}

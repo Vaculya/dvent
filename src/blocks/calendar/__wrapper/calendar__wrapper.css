@@ -1,0 +1,9 @@
+.calendar__wrapper{
+  margin-top: 30px;
+  max-width: 700px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,222px);
+  gap: 17px;
+  row-gap: 20px;
+  justify-content: center;
+}

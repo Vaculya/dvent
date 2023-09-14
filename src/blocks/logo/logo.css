@@ -1,0 +1,12 @@
+.logo{
+  display: flex;
+  gap: 10px;
+}
+
+
+@media screen and (max-width: 895px){
+  .logo{
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+.header__menu-link{
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1065px){
+  .header__menu-link{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .header__menu-link{
+    color: white;
+  }
+}

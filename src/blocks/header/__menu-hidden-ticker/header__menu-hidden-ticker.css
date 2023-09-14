@@ -1,0 +1,22 @@
+.header__menu-hidden-ticker{
+  display: none;
+}
+
+.header__menu-hidden-ticker:checked ~ .header__btn-menu {
+  left: 160px;
+}
+.header__menu-hidden-ticker:checked ~ .header__menu {
+  left: 0;
+}
+.header__menu-hidden-ticker:checked ~ .header__btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 8px;
+
+}
+.header__menu-hidden-ticker:checked ~ .header__btn-menu span.second {
+  opacity: 0;
+}
+.header__menu-hidden-ticker:checked ~ .header__btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -8px;
+}

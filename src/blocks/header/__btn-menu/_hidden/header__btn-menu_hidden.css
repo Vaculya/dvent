@@ -1,0 +1,9 @@
+.header__btn-menu_hidden{
+  display: none;
+}
+
+@media screen and (max-width:600px){
+  .header__btn-menu_hidden{
+    display: block;
+  }
+}

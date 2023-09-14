@@ -1,0 +1,23 @@
+.header__menu_hidden{
+
+}
+
+@media screen and (max-width: 600px){
+  .header__menu_hidden{
+    display: block;
+    position: fixed;
+    list-style:none;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .9);
+    height: 100%;
+    top: 0;
+    left: -200px;
+    transition: left .2s;
+    z-index: 2;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
